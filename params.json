@@ -1,6 +1,6 @@
 {
   "name": "Rjarvenpaa.GitHub.io",
-  "tagline": "",
-  "body": "# REST API\r\n### Pull rest API requests using the below templates\r\n``\r\n***\r\n## Devices\r\n[DEVICES](https://goodspeed.io/partner/api/v1/devices)\r\n\r\n",
+  "tagline": "Goodspeed REST",
+  "body": "# REST API\r\nUse Goodspeed rest API requests to generate reports using the below templates\r\n\r\n***\r\n\r\n## Devices\r\nPull all the devices from the account\r\n[DEVICES](https://goodspeed.io/partner/api/v1/devices)\r\n\r\n***\r\n\r\n## Sims\r\nPull all the devices from the account\r\n[SIMS](https://goodspeed.io/partner/api/v1/sims)\r\n***\r\n\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
