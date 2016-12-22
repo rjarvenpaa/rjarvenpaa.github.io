@@ -1,0 +1,40 @@
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+</script>
+
+<script type="text/javascript">
+var resp = $.get('/url', { headers: '' });
+// http://api.jquery.com/jQuery.ajax/
+$.ajax({
+	async: false,
+	headers: [],
+  accepts: {
+    mycustomtype: 'application/x-some-custom-type'
+  },
+  // Instructions for how to deserialize a `mycustomtype`
+  converters: {
+    'text mycustomtype': function(result) {
+      // Do Stuff
+      return newresult;
+    }
+  },
+ 
+  // Expect a `mycustomtype` back from server
+  dataType: 'mycustomtype'
+});
+var htmlData = '<table>';
+htmlData += '<thead><tr><th>eka</th><th>toka</th><th>kolmas</th></tr></thead>';
+htmlData += '<tbody>'
+forEach(r in resp.data) {
+	htmlData += '<tr><td>' + r.a + '</td><td>' + r.b + '</td><td>' + r.c + '</td></tr>';
+}
+htmlData += '</tbody></table>';
+// <input id="salasana" type="text" value="">
+var salasana = $('#salasana').val();
+// <div id="munluokka"><div>
+$('#munluokka').html( htmlData );
+</script>
+
+var resp = $.get('/url', { headers: '' });
